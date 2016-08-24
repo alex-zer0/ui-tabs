@@ -1,0 +1,19 @@
+.ui-tabs {
+  display: inline-flex;
+  align-items: center;
+  list-style: none;
+
+  & > li {
+    padding: 5px 10px;
+    background-color: @color-lightgray;
+    cursor: pointer;
+
+    & + li {
+      border-left: 1px solid @color-gray;
+    }
+
+    &:hover, &.selected {
+      background-color: @color-gray;
+    }
+  }
+}
